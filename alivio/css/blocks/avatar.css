@@ -1,0 +1,34 @@
+.card-avatar {
+    text-align: center;
+}
+.avatar-img{
+    margin-bottom: 13px;
+    width: 57px;
+   
+    border-radius: 50%;
+    object-fit: cover;
+}
+.avatar {
+}
+.avatar-name {
+    font-size: 12px;
+}
+.card-contents {
+    text-align-last: left;
+    padding-left: 6px;
+}
+.card-conents-title {
+    font-weight: 700;
+    font-size: 15.9292px;
+    line-height: 157%;
+    margin-bottom: 22px;
+}
+.card ul {
+    font-size: 10.62px;
+    
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.card ul li + li{
+    margin-top: 20px;
+}

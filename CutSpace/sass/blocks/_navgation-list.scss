@@ -1,0 +1,15 @@
+.navigation-list{
+    ul{
+        display: flex;
+
+    }
+    li:not(:last-child){
+        margin-right: 42px;
+     
+    }
+    a{
+        &.active , &:hover{
+            color: $accent-color;
+        }
+    }
+}
