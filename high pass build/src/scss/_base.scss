@@ -1,0 +1,32 @@
+
+
+html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  body
+  {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+body,body>*{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container{
+    max-width: 1355px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    
+}
+.hidden{
+    display: none !important;
+}

@@ -1,0 +1,144 @@
+.master-classes {
+    width: 100%;
+    background-color: $grey-color;
+    padding-top: 67px;
+    padding-bottom: 43px;
+}
+.master-classes__row {
+    display: flex;
+
+    
+}
+.master-classes__left {
+    display: flex;
+    column-gap: 30px;
+   
+    align-items: center;
+}
+.master-classes__left-title {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.master-classes__left-info-block {
+    
+}
+.master-classes__left-info-block-img {
+    width: 410px;
+    height: 330px;
+}
+.master-classes__left-text-block {
+    & > p{
+        margin-bottom: 64px;
+        max-width: 409px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #CACACA;
+       
+    }
+}
+.master-classes__left-text-block-info-time-wrap {
+    display: flex;
+    column-gap: 18px;
+}
+.master-classes__left-text-block-time{
+    display: flex;
+    column-gap: 4px;
+    font-size: 12px;
+  
+}
+
+
+
+.master-classes__left-text-block-title {
+    margin-top: 7px;
+    margin-bottom: 5px;
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+}
+
+.master-classes__right-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 46px;
+}
+.master-classes__right-item {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+.master-classes__right-item-img {
+}
+.master-classes__right-item-text-block {
+    &>p{
+        max-width: 315px;
+        font-family: 'TT Firs Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+}
+@media(max-width:1024px){
+    .master-classes__row{
+        flex-direction: column;
+    }
+    .order{
+        &-1{
+            order:1;
+        }
+        &-2{
+            order:3;
+        }
+        &-3{
+            order:4;
+        }
+        &-4{
+            order:2;
+        }
+    }
+  
+    .master-classes__right-wrap{
+        max-width: 963px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     
+    }
+}
+@media(max-width:768px){
+    .master-classes__right-item-text-block {
+        &>p{
+            max-width: 218px;
+
+        }
+    }
+   
+}
+
+@media(max-width:600px){
+
+    .master-classes__left{
+        flex-direction: column;
+        row-gap: 18px;
+    }
+    .master-classes__left-text-block{
+        & > p{
+            margin-bottom: 19.5px;
+        }
+    }
+}

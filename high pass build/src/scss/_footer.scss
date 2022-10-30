@@ -1,0 +1,97 @@
+@import "components";
+
+.footer {
+    margin-top: 68px;
+    background-color: $grey-color;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+.footer__title {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.5px;
+    &>p{
+        font-family: 'TT Firs Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #E9E9E9;
+    }
+}
+.footer__quote {
+    max-width: 361px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #CACACA;
+    &-author {
+        color: #666666;
+    }
+    
+}
+.footer__socials {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+   
+}
+.footer__socials-title  {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #CACACA;
+
+}
+.footer__social-item{
+    display: inline-block;
+}
+.subrow-mobile{
+    display: none !important;
+}
+.footer__title-mobile{
+    display: none;
+}
+.footer__subrow{
+    display: none;
+    width: 100% ;
+    background-color: #4A4A4A;
+}
+@media(max-width:901px) {
+    .footer__quote{
+        display: none;
+    }
+}
+@media(max-width:458px) {
+    .footer__row{
+        justify-content: center;
+    }
+    .footer__title{
+        display: none ;
+    }
+    .footer__title-mobile{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .title-mobile{
+        display: flex;
+        column-gap: 8px;
+    }
+    .footer__subrow{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 12px;
+    }
+}

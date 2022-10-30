@@ -1,0 +1,232 @@
+@import "./vars";
+
+.our-projects {
+    margin-top: 39px;
+    margin-bottom: 40px;
+}
+.our-projects__title{
+        margin-bottom: 12px;
+        color: $grey-color;
+        font-family: 'TT Firs Neue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+}
+
+.our-project__grid {
+
+
+        max-width: 1320px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+ 
+}
+.our-projects__title-wrapp{
+    position: relative;
+
+}
+.our-project__grid-wrap{
+    &1, &2{
+        display: flex;
+        gap: 30px;
+
+    }
+}
+.our-project__grid-item-info-text{
+    &-big1{
+        margin-bottom: 54px;
+    }
+    &-big2{
+        margin-bottom: 101px;
+    }
+}
+.mobile-hidden{
+    display: none !important;
+  
+}
+.our-project__grid-item-small {
+    display: inline-block;
+    max-width: 190px;
+    position: relative;
+    align-self: stretch;
+    &>p{
+        margin-top: 18px;
+        margin-bottom: 13px;
+        color: $grey-color;
+    }
+   
+}
+.fluid{
+    max-width: 300px;
+  
+}
+.our-project__grid-item-bage {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+
+.our-project__grid-item-date {
+
+    color: #999999;
+}
+.block-date{
+    display: flex;
+    align-items: center;
+
+    column-gap: 4px;
+    
+    font-size: 12px;
+    
+}
+
+.white-date{
+    color: #fff;
+    margin-bottom: 7px;
+}
+.our-project__grid-item-big{
+ 
+    position: relative;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 630px;
+    height: 300px;
+    
+}
+.bg{
+    &1{
+        background-image: url("../images/imgs/our-projects-big1.png");
+    }
+    &2{
+        background-image: url("../images/imgs/our-projects-big2.png");
+    }
+    &3{
+        background-image: url("../images/imgs/our-projects-big3.png");
+    }
+    &4{
+        background-image: url("../images/imgs/our-projects-big4.png");
+        
+        
+    }
+    
+}
+
+
+.our-project__grid-item-info {
+    position: absolute;
+    top: 22px;
+    left: 30px;
+    &>p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        max-width: 292px;
+        
+    }
+}
+
+.our-project__grid-item-big-title {
+    margin-bottom: 6px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.our-projects-btns{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 30px;
+   padding-top: 50px;
+   
+
+}
+.form-group{
+        &>input{
+            width: 0px;
+            height: 0px;
+            opacity: 0;
+            position: absolute;
+            z-index: -1;
+       }
+       &>input:checked + .checkbox-custom{
+        background-color:$orange-color;
+        color: #fff;
+       }
+ 
+}
+.checkbox-custom{
+    padding: 4px 8px;
+    background-color:#C4C4C4;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+
+}
+
+
+
+@media(max-width:1024px){
+ 
+    .our-project__grid-wrap{
+        &1, &2{
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            align-items: center;
+    
+        }
+    }
+    .our-project__grid-item-big{
+ 
+        position: relative;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        
+    }
+ 
+    .mobile-hidden{
+        display: inline-block !important;
+      
+    }
+}
+@media(max-width:1016px){
+    .our-project__grid-wrap{    
+    &1,&2{
+       width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    }   
+}
+@media(max-width:900px){
+    .mobile-hidden{
+        display:none !important;
+      
+    }
+   
+}
+@media (max-width:320px) {
+    .our-project__grid-item-info-text{
+        &-big1{
+            margin-bottom: 31px;
+        }
+        &-big2{
+            margin-bottom: 38px;
+        }
+    }
+    .our-projects-btns{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 0px;
+        column-gap: 10px;
+    }
+}

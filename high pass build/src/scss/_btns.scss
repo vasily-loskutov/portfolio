@@ -1,0 +1,26 @@
+.orange-btn{
+    background-color: $orange-color;
+    padding: 15.5px 22px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    transition: background-color 0.2s ease-in;
+    color: #fff;
+    &:hover{
+        background-color:#e36833;
+    }
+}
+
+.inherit-bg{
+    background-color: inherit;
+    border: 3px solid $orange-color;
+    transition: background-color 0.2s ease-in;
+
+    &:hover{
+        background-color:$orange-color;
+    }
+
+}

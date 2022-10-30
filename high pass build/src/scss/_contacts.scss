@@ -1,0 +1,257 @@
+.contacts {
+
+}
+.container {
+}
+.contacts__row {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 67px;
+    align-items: center;
+  
+}
+.contacts__left {
+    position: relative;
+}
+.contacts__left-title {
+    
+    margin-bottom: 22px;
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: $grey-color;
+}
+.contacts__left-map {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+ 
+}
+
+.overlay{
+   position: absolute;
+   left: 0;
+   width: 410px;
+   height: 460px;
+   background-color: rgba(32, 32, 32, 0.85);
+   z-index: 123123131;
+
+}
+.overlay__btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #666666;
+    border-radius: 50%;
+    padding: 5px;
+}
+.overlay__btn-open{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #666666;
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 123123131;
+}
+.btn-open-img{
+    rotate: 45deg;
+}
+.overlay__text-block {
+    position: absolute;
+    bottom: 150px;
+    left: 60px;
+    & >p{
+        padding-top: 5px;
+        padding-bottom: 2px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #CACACA;
+        max-width: 300px;
+
+  }
+}
+.overlay__text-block-title {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+   
+}
+.overlay__text-block-phone-block {
+    display: flex;
+    align-items: center;
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #fff;
+    
+}
+.contacts__right {
+   
+}
+
+.contacts__right-text-block {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding-top: 48px;
+    max-width: 409px;
+    & > p{
+        max-width: 409px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #999999;
+    }
+}
+.contacts__right-text-block-title {
+    margin-bottom: 5px;
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+
+}
+.input-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+    row-gap: 20px;
+    min-width: 410px;
+    &__textarea{
+        outline: none;
+        height: 150px;
+        resize:none;
+    }
+    &__email,&__name, &__textarea {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #999999;
+    }
+}
+
+.input-block__decor-wrap{
+    padding-top: 15px;
+    padding-left: 23px;
+    padding-bottom: 15px;
+    background-color:  #E9E9E9;
+    
+}
+
+.input-block-btn {
+    display: inline-block;
+
+}
+
+@media (max-width:1322px) {
+    .contacts__left-map {
+        width: 590px;
+        height: 460px;
+    }
+    .input-block {
+        min-width: 342px;
+    }
+    .overlay{
+        
+   position: absolute;
+   bottom: 0px;
+   width: 100%;
+   height: 157px ;
+   background-color: rgba(32, 32, 32, 0.85);
+   z-index: 123123131;
+    
+}
+.overlay__btn {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #666666;
+    border-radius: 50%;
+    padding: 5px;
+    z-index:  123123131 ;
+}
+
+.overlay__text-block {
+    position: absolute;
+    bottom: 8px;
+    left: 30px;
+    & >p{
+        padding-top: 5px;
+        padding-bottom: 2px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #CACACA;
+        max-width: 300px;
+
+  }
+}
+.overlay__text-block-title {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+   
+}
+.overlay__text-block-phone-block{
+    color: $orange-color;
+    & > svg > g{
+        opacity: 1;
+    }
+    & > svg > g > path{
+        fill:$orange-color;
+    }
+    
+}
+
+}
+@media (max-width:1000px) {
+   
+    .contacts__row{
+        align-items: start;
+        flex-direction: column;
+    }
+    .contacts__right-text-block {
+        max-width: 410px;
+    }
+
+}
+@media (max-width:625px) {
+   .overlay__btn{
+    top: 12px;
+    right: 10px;
+   }
+    .contacts__left-map {
+        width: 287px;
+   
+    }
+    .input-block__decor-wrap{
+        max-width: 100%;
+    } 
+    .input-block{
+        min-width:278px ;
+    }
+    .contacts__right-text-block {
+        max-width: 410px;
+    }
+}
